@@ -1,0 +1,14 @@
+<p>
+  emp-detail are
+</p>
+<br>
+{{empObj.name}} -- {{empObj.surname}}
+<br>
+{{num}}
+<button (click)="addumber()">Add Number</button>
+<div class="userdata">
+  <div *ngFor="let usrRec of userDatRecords">
+    <h1>{{usrRec.firstName}}</h1>
+    <h4>empID : {{usrRec.id}}</h4>
+  </div>
+</div>

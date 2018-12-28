@@ -1,0 +1,9 @@
+<br><br>
+<div *ngFor="let emp of empList">
+  {{emp.name}} and {{emp.surname}}
+  <button (click)="showDetail(emp)">Show Details</button>
+</div>
+
+<button (click)="addRecord()"> Add Record</button>
+
+<app-emp-detail [empObj]="selectedEmp"></app-emp-detail>
